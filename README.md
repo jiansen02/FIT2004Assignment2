@@ -11,9 +11,12 @@ of data is able to be processed within a span of time. This is done so by coding
 Ford-Fulkerson method.
 
 
-Project 2: U
+Project 2: Utilizing auto-complete technology to create a word prediction model (similar to SMS autocomplete functions on phones).
 
+Summary of Project 2 details: This code is meant to be a word prediction model to complete unfinished words. This is done so
+by coding out Tries.
 
+Appendix (below) - what the question paper in the assignment is:
 
 Project 1 (optional to read for more information):
 
@@ -65,4 +68,42 @@ You should implement a function maxThroughput(connections, maxIn, maxOut, origin
 targets) that returns the maximum possible data throughput from the data centre origin to
 the data centres specified in targets.
 
+
+Project 2 (optional to read for more information):
+
+Everyone is now talking about chatGPT. As amazing as it is, it is simply a well trained next
+word prediction model, similar to how the auto-complete on your phone but on a larger scale on
+the vast knowledge of the internet. In other words, chatGPT helps you finish your sandwiches
+sentences. You recall learning Tries from FIT2004 which can also be used for auto-complete.
+Thus, you set out to implement something similar using Tries.
+Unfortunately, you do not have the computing power needed to process human language. Your
+friend, Kim Katdashian who is a cat expert suggest doing a variant for cats because it is simpler.
+She call this catGPT. The concept is simple – the model would be able to complete what does
+a cat say automatically:
+1. Let say Tabby the cat goes “meow meoow meow meowth...”.
+2. Then catGPT will be able to complete Tabby’s sentence with “... meow meuw nyan”.
+Kim states that there are a total of 26 words in a cat’s vocabulary. You realized that it is
+possible to map this to the 26 letters in the English language. For example:
+• meow = a
+• meoow = b
+• meuw = c
+• meuuw = d
+• meuow = e
+• ...
+• nyan = y
+• meowth = z
+In the example above, Tabby’s initial sentence could be viewed as abaz and then it is autocompleted to be acy. It is auto-completed this way because many many cats would finish their
+sentence in such a way 1
+. Luckily, Kim has collected a large set of cat sentences to help your
+Trie decide how a cat sentence would be completed. These sentences are stored in a long list
+of sentences, formatted as follows:
+• abc
+• abazacy
+• dbcef
+• gdbc
+• abazacy
+• xyz
+• ...
+• abazacy
+• dbcef
 
